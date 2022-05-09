@@ -1,5 +1,20 @@
 # vue-3-crud
 
+### Project diagram
+
+```mermaid
+graph TD
+    A[http-common] -->|import| B(Explorer Service)
+    C(Add Explorer)-->|create| B
+    B -->|get, delete, update| D(Explorer)
+    B -->|getAll| E(Explorer List)
+    C <--> F[Router]
+    D <--> F
+    E <--> F
+    F --> G(main.js)
+    G <--> H[fa:fa-user User]
+```
+
 ## Project setup
 ```
 npm install
