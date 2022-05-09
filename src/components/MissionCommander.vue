@@ -58,7 +58,7 @@ export default {
       MissionCommanderService.delete(this.currentMissionCommander.id)
       .then(response => {
         console.log(response.data);
-        this.$router.push({ name: "missionCommander" });
+        this.$router.push({ name: "missioncommander" });
       })
       .catch(e => {
           console.log(e);
