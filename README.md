@@ -8,7 +8,7 @@ graph TD
     C(Add Explorer)-->|create| B
     B -->|get, delete, update| D(Explorer)
     B -->|getAll| E(Explorer List)
-    B --> I[fa:fa-db Backend]
+    B -->|PUT,POST,DELETE,GET| I[fa:fa-db Backend]
     C <--> F[Router]
     D <--> F
     E <--> F
