@@ -47,7 +47,7 @@
 <script>
 import MissionCommanderService from "../services/MissionCommanderService";
 export default {
-  name: "add-missionCommander",
+  name: "add-missioncommander",
   data() {
     return {
       missionCommander: {
@@ -64,7 +64,7 @@ export default {
       var data = {
         name: this.missionCommander.name,
         username: this.missionCommander.username,
-        mission: this.missionCommander.mainStack
+        mainStack: this.missionCommander.mainStack
       };
       MissionCommanderService.create(data)
         .then(response => {
